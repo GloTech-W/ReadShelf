@@ -30,7 +30,7 @@ const DropdownLinks = [
   },
   {
     name: "Reading Lists",
-    link: "/#",
+    link: "/reading-lists", // Updated link for Reading Lists
   },
 ];
 
@@ -89,7 +89,7 @@ const Navbar = ({ handlereadNowPopup }) => {
                         ) : (
                           <RouterLink
                             className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
-                            to={data.link}
+                            to={data.link} // Use the link here
                           >
                             {data.name}
                           </RouterLink>
@@ -123,4 +123,4 @@ const Navbar = ({ handlereadNowPopup }) => {
   );
 };
 
-export default Navbar;
+export default Navbar;  
